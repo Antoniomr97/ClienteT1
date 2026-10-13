@@ -3,9 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>ClienteT1</title>
+    <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
-    <h1>Cliente T1</h1>
+    <div class="header"></div>
+    <div class="main">
+      <form id="form-nota">
+        <fieldset>
+          <legend>Comienza tu juicio</legend>
+
+          <label for="nota">Introduce aquí tu nota</label>
+          <input
+            type="number"
+            step="any"
+            id="nota"
+            inputmode="decimal"
+            name="nota"
+            min="0"
+            max="10"
+          />
+
+          <button type="submit" id="enviar">Comencemos</button>
+
+          <p id="resultado"></p>
+        </fieldset>
+      </form>
+    </div>
+    <div class="footer"></div>
   </body>
 </html>
